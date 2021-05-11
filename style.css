@@ -124,7 +124,6 @@ a:hover {
 }
 .part-2 {
   padding-left: 10%;
-
   font-size: 7rem;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 15%;
@@ -136,15 +135,16 @@ a:hover {
 .part1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left: 4%;
-  width: 92%;
+  margin-left: 3%;
+  width: 94%;
   margin-top: 10px;
   margin-bottom: 5%;
+  box-shadow: 10px 10px 10px #888888;
 }
-
 .part1 img {
   max-width: 100%;
-  height: 50vh;
+  height: 46vh;
+ 
 }
 .timings {
   width: 100%;
@@ -232,6 +232,9 @@ h3 {
 .special-features {
   display: flex;
 }
+.video{
+  padding:5px 0 5px 0;
+}
 .half1,
 .half2 {
   padding-bottom: 10px;
@@ -265,8 +268,9 @@ h3 {
   background-color: rgb(36, 29, 83);
   color: white;
   height: 75%;
-  /* margin-top:4%; */
+  margin-top:2%;
   margin-left: -7%;
+  box-shadow: 10px 10px 10px #888888;
 }
 
 .part4 {
@@ -358,6 +362,7 @@ h3 {
   padding-left: 2%;
   font-weight: 900;
   color: white;
+  box-shadow:  10px 10px white;
 }
 
 .part8 {
@@ -392,32 +397,155 @@ h5 {
 }
 
 .part9 {
-  margin: 20% 0 10% 5%;
+  margin: 20% 0 5% 5%;
+  
   width: 90%;
   height: 60vh;
   background-image: url(./utilities/dentist5.jpg);
   background-size: cover;
   position: relative;
   opacity: 0.7;
-}
 
+}
+.part9 button{
+  height:2.5rem;
+  width:15rem;
+  border-radius:15px;
+  background-color: #f79e02;
+  color:white;
+  font-weight: 600;
+}
 .care {
-  margin: 10% 0 0 0;
+  margin: 10% 0 0 4%;
   padding: 2% 0 0 2%;
   width: 45%;
   height: 55%;
   background-color: white;
-  position: relative;
   position: absolute;
   box-shadow: 10px 10px 10px #888888;
 }
 
 .part10 {
   width: 90%;
-  margin: auto;
+ margin:auto;
   box-shadow: 10px 10px 10px #888888;
   text-align: center;
+  height:20vh;
+  margin-bottom:5%;
 }
+
+.part10 h1{
+  font-size:2.5rem;
+  padding-bottom:20px;
+}
+.part10 p{
+  font-size:1.5rem;
+}
+
+
+/* .small-line{
+  height:4%;
+  background-color:#14b6d3;
+ justify-content: center;
+  width:4%
+} */
+
+.part11{
+display: grid;
+grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+grid-gap:20px;
+width:90%;
+height:40vh;
+margin:auto;
+margin-bottom:5%;
+}
+
+.img1{
+  width:100%;
+  background-image:url('./utilities/surgeon.jpg');
+  background-size: cover;
+  box-shadow: 10px 10px 10px #888888;
+  position: relative;
+}
+.img2{
+  width:100%;
+  background-image:url('./utilities/dentist6.jpg');
+  background-size: cover;
+  box-shadow: 10px 10px 10px #888888;
+  position: relative;
+}
+.img3{
+  width:100%;
+  background-image:url('./utilities/family2.jpg');
+  background-size: cover;
+  box-shadow: 10px 10px 10px #888888;
+  position: relative;
+}
+
+.info1,.info2,.info3{display:flex;
+position: absolute;
+bottom:0;
+align-items: center;
+background-color:white;
+width:80%;
+margin-left:10%;
+vertical-align: bottom;
+box-shadow: 10px 10px 10px #888888;
+}
+.info1 h4,.info2 h4,.info3 h4{
+  padding:10px 0 0 10px;
+  text-align: left;
+}
+.info1 h5,.info2 h5,.info3 h5{
+ margin:5px 0 5px 10px;
+ text-align: center;
+  background-color: #f79e02;
+  color:white;
+}
+
+footer{
+  display:grid;
+  grid-gap:20px;
+  grid-template-areas: "part1 part2 part3 part4";
+  grid-template-columns: 1fr 1.5fr 0.75fr 1.25fr;
+  grid-template-rows: repeat(2,1fr);
+  height:60vh;
+  width:90%;
+  margin:auto;
+  background-color:rgb(36, 29, 83);
+}
+.endnote{
+  color:white;
+  padding:5% 0 0 15%;
+  height:100%;
+}
+.recent-posts{
+  color:white;
+  padding:10px 0 0 15px;
+}
+.recent-posts img{
+ width:20%;
+ padding:20px 20px 0 40px;
+}
+
+.recent1,.recent2{display:flex;
+justify-content: space-between;
+width:100%;}
+
+.recent1,.recent2 h5{
+ margin-left:5%;
+}
+
+
+.end{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  color:white;
+  justify-content: space-between;
+}
+
+
 @media screen and (max-width: 1000px) {
   .part1 {
     display: grid;
