@@ -505,38 +505,103 @@ box-shadow: 10px 10px 10px #888888;
 
 footer{
   display:grid;
-  grid-gap:20px;
-  grid-template-areas: "part1 part2 part3 part4";
-  grid-template-columns: 1fr 1.5fr 0.75fr 1.25fr;
-  grid-template-rows: repeat(2,1fr);
-  height:60vh;
+  /* grid-gap:20px; */
+  column-gap: 20px;
+  /* grid-template-areas: "part1 part2 part3 part4"; */
+  grid-template-columns: 1fr 1.5fr 0.75fr 1.45fr;
+  grid-template-rows: 13fr 1fr;
+  height:53vh;
   width:90%;
   margin:auto;
   background-color:rgb(36, 29, 83);
 }
+
+footer h3 {
+  color: #ffffff;
+  margin: 15px 0 0 15px;
+}
+
 .endnote{
   color:white;
   padding:5% 0 0 15%;
   height:100%;
 }
+
 .recent-posts{
   color:white;
-  padding:10px 0 0 15px;
 }
 .recent-posts img{
- width:20%;
- padding:20px 20px 0 40px;
+ width:120px;
+ height:120px;
+ padding:20px;
 }
 
 .recent1,.recent2{display:flex;
 justify-content: space-between;
 width:100%;}
 
-.recent1,.recent2 h5{
- margin-left:5%;
+.recent1 h5,.recent2 h5{
+ font-size: 17px;
+ font-weight: 500;
 }
 
+.tags a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 19px;
+}
 
+.tags a:hover {
+  text-decoration: none;
+  color: #14b6d3;
+  background-color: rgb(36, 29, 83);
+  padding: 5px;
+  font-size: 19px;
+}
+
+.tags ul {
+  list-style: none;
+}
+
+.tags ul li::before{
+  content: "\00BB";
+  padding-right: 5px;
+  color: white;
+}
+
+.instapics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1px;
+  grid-template-rows: 100px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.insta img {
+  height: 95px;
+  width: 95px;
+}
+
+.left {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  color: rgb(214, 214, 214);
+  padding-left: 35px;
+  padding-bottom: 8px;
+  font-size: 17px;
+}
+.right {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+}
+.icon {
+  padding: 2px;
+  margin-right: 5px;
+}
 .end{
   width:100%;
   display:flex;
@@ -544,7 +609,6 @@ width:100%;}
   color:white;
   justify-content: space-between;
 }
-
 
 @media screen and (max-width: 1000px) {
   .part1 {
@@ -567,3 +631,17 @@ width:100%;}
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
